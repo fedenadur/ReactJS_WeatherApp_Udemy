@@ -1,0 +1,30 @@
+{
+  "name": "weatherapp",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://fedenadur.github.io/ReactJS_WeatherApp_Udemy/",
+  "dependencies": {
+    "@material-ui/core": "^3.6.1",
+    "convert-units": "^2.3.4",
+    "gh-pages": "^2.0.1",
+    "material-ui": "^0.20.1",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-flexbox-grid": "^2.1.2",
+    "react-materialize": "^2.2.1",
+    "react-redux": "^6.0.0",
+    "react-scripts": "1.1.4",
+    "react-weathericons": "^1.0.4",
+    "redux": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
