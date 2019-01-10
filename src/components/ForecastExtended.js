@@ -5,7 +5,7 @@ import './styles.css';
 import TransformForecast from '../services/transformForecast'
 
 const api_key ="fb6c4e641dc82cf7ecf6a557ebfc58cf";
-const url = "http://api.openweathermap.org/data/2.5/forecast";
+const url = "https://api.openweathermap.org/data/2.5/forecast";
 
 class ForecastExtended extends Component {
     constructor(){
@@ -37,9 +37,9 @@ class ForecastExtended extends Component {
                 }
             )
         .then(forecast_data => {
-                console.log(forecast_data);
+                // console.log(forecast_data);
                 const forecastData = TransformForecast(forecast_data);
-                console.log(forecastData);
+                // console.log(forecastData);
                 this.setState({forecastData})
         })
     }
