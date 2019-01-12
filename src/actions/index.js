@@ -7,7 +7,7 @@ export const setCity = payload => ({ type: SET_CITY, payload});
 const setForecastData = payload => ({ type: SET_FORECAST_DATA, payload})
 
 const api_key ="fb6c4e641dc82cf7ecf6a557ebfc58cf";
-const url = "https://api.openweathermap.org/data/2.5/forecast";
+const url = "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/forecast";
 
 export const setSelectedCity = payload => {
     return dispatch => {
