@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import PropTypes from 'prop-types';
 import ForecastItem from './ForecastItem/index';
 import './styles.css';
-import TransformForecast from '../services/transformForecast'
+import TransformForecast from './../services/transformForecast';
 
 const api_key ="fb6c4e641dc82cf7ecf6a557ebfc58cf";
 const url = "https://api.openweathermap.org/data/2.5/forecast";
@@ -37,9 +37,7 @@ class ForecastExtended extends Component {
                 }
             )
         .then(forecast_data => {
-                // console.log(forecast_data);
                 const forecastData = TransformForecast(forecast_data);
-                // console.log(forecastData);
                 this.setState({forecastData})
         })
     }
