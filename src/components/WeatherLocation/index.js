@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 // import CircularProgress from 'material-ui/CircularProgress'
 
 const api_key ="fb6c4e641dc82cf7ecf6a557ebfc58cf";
-const url = "http://api.openweathermap.org/data/2.5/weather";
+const url = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather";
 
 class WeatherLocation extends Component {
     constructor({city}){
