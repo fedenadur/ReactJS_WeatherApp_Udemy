@@ -7,6 +7,7 @@
     "@material-ui/core": "^3.6.1",
     "convert-units": "^2.3.4",
     "gh-pages": "^2.0.1",
+    "lodash.topairs": "^4.3.0",
     "material-ui": "^0.20.1",
     "moment": "^2.22.2",
     "prop-types": "^15.6.1",
@@ -17,7 +18,8 @@
     "react-redux": "^6.0.0",
     "react-scripts": "1.1.4",
     "react-weathericons": "^1.0.4",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -6,7 +6,6 @@ import './styles.css';
 
 const LocationList = ({cities, onSelectedLocation}) => {
     const handleWeatherLocationClick = city   => {
-        console.log(`handleWeatherLocationClick ${city.city}`);
         onSelectedLocation(city);
     }
 
@@ -14,12 +13,10 @@ const LocationList = ({cities, onSelectedLocation}) => {
         return  cities.map( city => 
             (
                 <WeatherLocation 
-                    key={city} 
-                    city={city}
-                    onWeatherLocationClick={() => {
-                        handleWeatherLocationClick(city);
-                    }}
-                    />
+                    key={city.key} 
+                    city={city.name}
+                    onWeatherLocationClick={() =>  handleWeatherLocationClick(city.name)}
+                    data={city.data}/>
             )
         )
      }
