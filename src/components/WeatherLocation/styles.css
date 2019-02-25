@@ -27,3 +27,10 @@
     font-size:35px;
     white-space: nowrap;
 }
+
+
+@media  (max-width: 64em) {
+    .weatherLocationCont{
+        margin-left:0px;
+    }
+}
