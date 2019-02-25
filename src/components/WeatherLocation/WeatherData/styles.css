@@ -47,4 +47,12 @@
     color:orangered;
 }
 
+@media  (max-width: 64em) {
+    .extraInfoText{
+        font-size:12px;
+    }
 
+    .forecast-title {
+        font-size: 2rem;
+    }
+}
